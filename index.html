@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Retro Vinyl Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/css/reset.css" />
+  <link rel="stylesheet" href="./style/css/style.css">
+
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Retro Vinyl</div>
+      <nav class="nav-desktop">
+        <a href="#products">პროდუქტები</a>
+        <a href="#about">ჩვენს შესახებ</a>
+        <a href="#featured">შემოთავაზებული</a>
+        <a href="#search">ძიება</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+      <div class="burger" id="burger">&#9776;</div>
+    </div>
+    <nav class="nav-mobile hidden" id="nav-mobile">
+      <a href="#products">პროდუქტები</a>
+      <a href="#about">ჩვენს შესახებ</a>
+      <a href="#featured">შემოთავაზებული</a>
+      <a href="#search">ძიება</a>
+      <a href="#contact">კონტაქტი</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="container hero-container">
+      <h1>Feel the Warmth of Vinyl</h1>
+      <p>
+        ჩვენთან ნახავ იშვიათ ფირფიტებს, კლასიკას, ახალ ალბომებს და ნამდვილ მუსიკალურ ემოციას.
+        
+        💿 შეიგრძენი ნამდვილი ხმა.
+
+        📀 შეაგროვე, მოუსმინე, შეიყვარე..</p>
+      <a href="#products" class="btn-primary">შეიძინეთ ახლავე</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2>ჩვენი პროდუქტები</h2>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="./style/img/ph1.png" alt="Vintage Record Player" />
+          <h3>Vintage Record Player</h3>
+          <p class="price">1099.99₾</p>
+          <button class="btn-secondary">შეძენა</button>
+        </article>
+
+        <article class="product-card">
+          <img src="./style/img/ph2.png" alt="Classic Vinyl" />
+          <h3>Tame Impala Vinyl "Currents"</h3>
+          <p class="price">84.99₾</p>
+          <button class="btn-secondary">შეძენა</button>
+        </article>
+
+        <article class="product-card">
+          <img src="./style/img/ph3.png" alt="Modern Record Player" />
+          <h3>Modern Record Player</h3>
+          <p class="price">499.99₾</p>
+          <button class="btn-secondary">შეძენა</button>
+        </article>
+
+        <article class="product-card">
+          <img src="./style/img/photo4.png"Vinyl Album" />
+          <h3>Vinyl Album</h3>
+          <p class="price">75.99₾</p>
+          <button class="btn-secondary">შეძენა</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>ჩვენს შესახებ</h2>
+      <p>
+        ჩვენი მაღაზია შეიქმნა მუსიკისა და ვინილის სიყვარულით. ვაგროვებთ კლასიკას, იშვიათ ჩანაწერებს და თანამედროვე არტისტებსაც, რომ ხმა არა უბრალოდ გაისმოდეს — იგრძნოს. ჩვენთვის ვინილი არის მოგონება, გრძნობა და ხელოვნება ერთდროულად. თუ შენთვისაც მუსიკა რიტუალს ჰგავს — სწორ ადგილას ხარ.
+      </p>
+    </div>
+  </section>
+
+  <section id="featured" class="featured">
+    <div class="container">
+      <h2>შემოთავაზებული ალბომები</h2>
+      <div class="featured-flex">
+
+        <article class="album-card">
+          <img src="./style/img/pnk.png" alt="Pink Floyd" />
+          <h3>The Dark Side of the Moon</h3>
+          <p>Pink Floyd</p>
+        </article>
+
+        <article class="album-card">
+          <img src="./style/img/bord.png"" alt="Borderline" />
+          <h3>Borderline</h3>
+          <p>Tame Impala</p>
+        </article>
+
+        <article class="album-card">
+          <img src="./style/img/ultra.png" alt="ultraviolence" />
+          <h3>Ultraviolence</h3>
+          <p>Lana Del Rey</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="search" class="search">
+    <div class="container">
+      <h2>მოძებნეთ სასურველი ჩანაწერი</h2>
+      <div class="search-controls">
+        <input type="text" id="searchInput" placeholder="შეიყვანეთ დასათაურება" />
+        <button id="searchBtn" class="btn-primary">მოძებნა</button>
+      </div>
+      <div id="resultsContainer" class="results"></div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>დაგვეკონტაქტეთ</h2>
+
+      <form id="contactForm" novalidate>
+        <input type="text" id="name" placeholder="სახელი" required />
+        <input type="email" id="email" placeholder="მეილი" required />
+        <input type="password" id="password" placeholder="პაროლი" required />
+        <label><input type="checkbox" id="showPassword" /> ნახე პაროლი</label>
+        <textarea id="message" placeholder="თქვენი მესიჯი" required></textarea>
+        <button type="submit" class="btn-primary">გაგზავნა</button>
+        <p id="formMsg" class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Retro Vinyl.               All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#products">პროდუქტები</a>
+        <a href="#about">ჩვენს შესახებ</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <button id="scrollToTop" title="Scroll to top">⬆</button>
+
+
+  <div id="cookieNotice" class="cookie-notice">
+    საიტი იყენებს cookies, რათა გააუმჯობესოს თქვენი გამოცდილება..
+
+    <button id="acceptCookies">დადასტურება</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
